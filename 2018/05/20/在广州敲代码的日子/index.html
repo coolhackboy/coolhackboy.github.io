@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#在广州敲代码的日子"><span class="toc-text">在广州敲代码的日子</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -111,48 +115,48 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-20</div>
-        <div class="post-info">
-            <a href="/2018/05/20/在广州敲代码的日子/">
-                <h3>
-                    Untitled
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-14</div>
-        <div class="post-info">
-            <a href="/2018/05/14/基于星云 的众筹平台/">
-                <h3>
-                    基于星云开发的众筹平台
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#BlockChain" title="BlockChain">BlockChain</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    
-</ul>
 
+
+<div class="post-container">
+    <div class="post-title">
+        
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-05-20 11:22:31</span></span>
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="在广州敲代码的日子"><a href="#在广州敲代码的日子" class="headerlink" title="在广州敲代码的日子"></a>在广州敲代码的日子</h2><p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1frhncjebvlj30hs0buwgb.jpg" alt="59ab03c49976de49abdc47c6470d7ab1"></p>
+<p>\&lt;center>广州日落\&lt;/center></p>
+<p>2018-05-15，天气晴朗，刚从上一家公司交接完工作，收拾好行李前往新的城市-广州。广州既陌生又熟悉，之前短暂呆了三四个月，后来因为家庭原因离开了这里。回到这个城市，体验了一把挤公交，空间感很好，车上五花八门的味道扑鼻而来，那感觉真酸爽。</p>
+<blockquote>
+<p>一次就把事情做好，是一种美德，也是一种重要的能力。但是，开始阶段，还是细分任务，别给自己那么大压力吧。</p>
+</blockquote>
+<p>第二天过去新公司报到了，伙伴们很棒，区块链公司，当初选择放弃研究所到区块链公司感觉是正确的，第一天老黄（技术负责人）就叫我到办公室，开门见山，让我做Smart Contract</p>
+<p>说完另外西安的leader给了我个list，写一个mpt树的demo，实现一些功能，&amp;……@！*#好吧，既然选择了就要干吧</p>
+<p>然后就是接连几天，包括周六的加班，广州的天气变化多端，公司空调很低，我背包里需要常备<code>雨伞</code>，<code>充电宝</code>，<code>长袖</code>，<code>公交卡</code>，每天就像一个背包客的出门，迈进挤公交的队伍。</p>
+<p>工作现在还在做，喜欢的工作，加上喜欢的公司，足矣弥补挤公交的酸爽。</p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -182,10 +186,24 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: '',
+        owner: 'coolhackboy',
+        repo: 'coolhackboy.github.io',
+        oauth: {
+            client_id: '77c4f0726b57c3798050',
+            client_secret: '38aa654e5be07fa5410eb012464284312de9c1b4',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>
